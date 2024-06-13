@@ -10,6 +10,11 @@ DEVICE_PATH := device/xiaomi/liuqin
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
+# TWRP 12.1 requirements
+TARGET_SUPPORTS_64_BIT_APPS := true
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
