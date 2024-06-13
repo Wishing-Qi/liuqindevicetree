@@ -6,7 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_liuqin.mk
+    $(LOCAL_DIR)/omni_liuqin.mk
 
 COMMON_LUNCH_CHOICES := \
     twrp_liuqin-eng
