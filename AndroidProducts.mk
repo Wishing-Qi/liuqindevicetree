@@ -9,4 +9,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_liuqin.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_liuqin-eng
+    omni_liuqin-eng
