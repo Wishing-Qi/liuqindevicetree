@@ -21,11 +21,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     bootctrl.taro
 
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.taro \
-    libgptutils \
-    libz \
-    libcutils
+TARGET_RECOVERY_DEVICE_MODULES += \
+    libion \
+    libxml2 \
+    vendor.display.config@1.0 \
+    vendor.display.config@2.0 \
+    libdisplayconfig.qti \
+    android.hardware.keymaster@4.1
+
+RECOVERY_LIBRARY_SOURCE_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so \
+    $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@1.0.so \
+    $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@2.0.so \
+    $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/libdisplayconfig.qti.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.keymaster@4.1.so
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
